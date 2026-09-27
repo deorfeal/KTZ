@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -22,14 +23,13 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo logo" data-aos="fade">
-                    <img src="images/logo.svg" alt="logo">
-                    <img src="images/logo-white.svg" alt="logo">
-                </div>
+                <a class="header__logo logo" href="#">
+                    <img src="images/logo.svg" alt="logo" data-aos="fade">
+                </a>
                 <div class="header__wrapper">
                     <div class="header__langs langs" data-aos="fade">
                         <ul class="langs__list">
-                            <li class="langs__item">
+                            <li class="langs__item langs__item--active">
                                 Рус
                             </li>
                             <li class="langs__item">
@@ -48,32 +48,27 @@
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#">
                                     О компании
                                 </a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">
-                                    Услуги
+                                    Продукция
                                 </a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">
-                                    Как мы работаем
+                                    Производство
                                 </a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">
-                                    Статьи
+                                    Клиенты
                                 </a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">
-                                    Кейсы
+                                    Сертификаты
                                 </a>
                             </li>
                             <li class="menu__item">
@@ -83,13 +78,36 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="header__wrp" data-aos="fade">
-                    <div class="header__burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="header__box" data-aos="fade">
+                        <a class="header__phone header-phone" href="#">
+                            <div class="header-phone__icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5988_213742)">
+                                        <path
+                                            d="M17.51 13.2102L14.998 10.6982C14.1009 9.80111 12.5758 10.16 12.2169 11.3262C11.9478 12.1337 11.0507 12.5822 10.2433 12.4028C8.44901 11.9542 6.02677 9.62168 5.57821 7.73772C5.30907 6.93027 5.84734 6.03314 6.65476 5.76404C7.82102 5.40519 8.17987 3.88007 7.28275 2.98295L4.77079 0.470991C4.05309 -0.156997 2.97654 -0.156997 2.34855 0.470991L0.644012 2.17553C-1.06053 3.96978 0.823438 8.72455 5.03993 12.941C9.25642 17.1575 14.0112 19.1313 15.8054 17.337L17.51 15.6324C18.138 14.9147 18.138 13.8382 17.51 13.2102Z"
+                                            fill="#0E317B" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5988_213742">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>
+                                8 701 372 2695
+                            </span>
+                        </a>
+                        <a class="header__link btn btn--orange" href="#">
+                            Оставить заявку
+                        </a>
                     </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -99,27 +117,27 @@
         <div class="wrapper">
             <main class="main">
                 <section class="main__head head">
+                    <picture class="head__bg">
+                        <img src="images/head-bg.jpg" alt="img">
+                    </picture>
                     <div class="container">
                         <div class="head__inner">
-                            <picture class="head__bg">
-                                <img src="images/head-bg.jpg" alt="img">
-                            </picture>
                             <div class="head__breadcrumbs breadcrumbs" data-aos="fade-right">
                                 <ul class="breadcrumbs__list">
                                     <li class="breadcrumbs__item">
                                         <a class="breadcrumbs__link" href="#">
                                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_5903_257389)">
+                                                <g clip-path="url(#clip0_5988_171814)">
                                                     <path
                                                         d="M12.7817 5.81L6.949 0.495292C6.69298 0.261978 6.30692 0.262003 6.05101 0.495266L0.218309 5.81002C0.0132296 5.9969 -0.0545125 6.28483 0.0456788 6.54353C0.145895 6.80223 0.389899 6.96938 0.667342 6.96938H1.59892V12.2943C1.59892 12.5054 1.77011 12.6766 1.98123 12.6766H5.17826C5.38938 12.6766 5.56056 12.5055 5.56056 12.2943V9.06118H7.43952V12.2943C7.43952 12.5055 7.6107 12.6766 7.82182 12.6766H11.0187C11.2298 12.6766 11.401 12.5055 11.401 12.2943V6.96938H12.3328C12.6102 6.96938 12.8542 6.80221 12.9544 6.54353C13.0545 6.2848 12.9867 5.9969 12.7817 5.81Z"
-                                                        fill="#D6B17C" />
+                                                        fill="#F20000" />
                                                     <path
-                                                        d="M11.3014 1.08594H8.73389L11.6837 3.7681V1.46822C11.6837 1.2571 11.5125 1.08594 11.3014 1.08594Z"
-                                                        fill="#D6B17C" />
+                                                        d="M11.3018 1.08594H8.73438L11.6841 3.7681V1.46822C11.6841 1.2571 11.513 1.08594 11.3018 1.08594Z"
+                                                        fill="#F20000" />
                                                 </g>
                                                 <defs>
-                                                    <clipPath id="clip0_5903_257389">
+                                                    <clipPath id="clip0_5988_171814">
                                                         <rect width="13" height="13" fill="white" />
                                                     </clipPath>
                                                 </defs>
@@ -135,11 +153,11 @@
                                             <g opacity="0.5">
                                                 <path
                                                     d="M11.8082 6.46686L7.47455 10.8006C7.35085 10.9243 7.18597 10.9922 7.01017 10.9922C6.83417 10.9922 6.66939 10.9242 6.54569 10.8006L6.15223 10.407C6.02862 10.2835 5.96052 10.1185 5.96052 9.94264C5.96052 9.76683 6.02862 9.5963 6.15223 9.47279L8.6804 6.93905H0.648286C0.286143 6.93905 0 6.65554 0 6.2933V5.73692C0 5.37468 0.286143 5.06258 0.648286 5.06258H8.70908L6.15232 2.5147C6.02872 2.391 5.96062 2.23051 5.96062 2.05461C5.96062 1.8789 6.02872 1.71607 6.15232 1.59247L6.54578 1.20018C6.66949 1.07647 6.83427 1.00906 7.01027 1.00906C7.18607 1.00906 7.35095 1.07735 7.47465 1.20106L11.8083 5.53468C11.9323 5.65877 12.0005 5.82443 12 6.00052C12.0004 6.17721 11.9323 6.34296 11.8082 6.46686Z"
-                                                    fill="white" />
+                                                    fill="#282732" />
                                             </g>
                                         </svg>
                                         <span>
-                                            О компании
+                                            О нас
                                         </span>
                                     </li>
                                 </ul>
@@ -150,649 +168,754 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__description description">
-                    <div class="container">
-                        <div class="description__inner">
-                            <div class="description__titling titling" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    Наша мисия
-                                </h2>
-                                <p class="titling__text">
-                                    Штат компании состоит из высококвалифицированного персонала, аттестованного по всем
-                                    видам работ в сфере градостроительной деятельности ,в области безопасности и охраны
-                                    труда, безопасных методов выполнения работ;
-                                    <br> <br>
-                                    Компания имеет обширное материально-техническое оснащение: современную
-                                    производственную базу, сертифицированное оборудование, средства измерения и
-                                    контроля, профессиональные инструменты, машины и механизмы.
-                                </p>
-                            </div>
-                            <picture class="description__img" data-aos="fade-up">
-                                <img src="images/description-img.jpg" alt="img">
-                            </picture>
-                        </div>
-                    </div>
-                </section>
-                <section class="main__about about" data-aos="fade-up">
+                <section class="main__about about">
                     <div class="container">
                         <div class="about__inner">
-                            <div class="about__titling titling titling--light" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    О нас
-                                </h2>
-                                <p class="titling__text">
-                                    Наша компания оказывает логистические услуги высокого качества уже более 12 лет. Мы
-                                    постоянно совершенствуем свою работу и стремимся быть лучшими в своей сфере. <br>
-                                    Основная миссия нашей компании – это служение. Служение всем участникам процесса,
-                                    начиная от клиентов и заканчивая конечным потребителем. Наша задача сделать
-                                    перевозку
-                                    взаимовыгодной по всей логистической цепочке, и чтобы каждый участник процесса мог
-                                    удовлетворить свои интересы.
-                                    <br> <br>
-                                    Благодаря нашему опыту и четко выстроенной работе, Вы сможете глубоко заниматься
-                                    развитием своего дела, а все вопросы по <br>
-                                    доставке Ваших грузов мы возьмем на себя. <br>
-                                    Ваши возможности и наши ресурсы залог успешного сотрудничества!
-                                </p>
+                            <div class="about__images" data-aos="zoom-in">
+                                <picture class="about__img">
+                                    <img src="images/about-img-1.jpg" alt="img">
+                                </picture>
+                                <picture class="about__img">
+                                    <img src="images/about-img-2.jpg" alt="img">
+                                </picture>
                             </div>
-                            <picture class="about__bg">
-                                <img src="images/about-bg.jpg" alt="bg">
-                            </picture>
-                            <div class="about__digits digits">
-                                <ul class="digits__list">
-                                    <li class="digits__item" data-aos="zoom-in" data-aos-delay="250">
-                                        <div class="digits__digit">
-                                            7 лет
-                                        </div>
-                                        <div class="digits__text">
-                                            на рынке
-                                        </div>
-                                    </li>
-                                    <li class="digits__item" data-aos="zoom-in" data-aos-delay="500">
-                                        <div class="digits__digit">
-                                            25
-                                        </div>
-                                        <div class="digits__text">
-                                            менеджеров
-                                            в команде
-                                        </div>
-                                    </li>
-                                    <li class="digits__item" data-aos="zoom-in" data-aos-delay="750">
-                                        <div class="digits__digit">
-                                            35
-                                        </div>
-                                        <div class="digits__text">
-                                            единиц техники
-                                            в автопарке
-                                        </div>
-                                    </li>
-                                    <li class="digits__item" data-aos="zoom-in" data-aos-delay="1000">
-                                        <div class="digits__digit">
-                                            600т
-                                        </div>
-                                        <div class="digits__text">
-                                            груза отправляется ежемесячно
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="about__body">
+                                <div class="about__titling titling" data-aos="fade-right">
+                                    <picture class="titling__decor">
+                                        <img src="images/decor.png" alt="decor">
+                                    </picture>
+                                    <div class="titling__suptext">
+                                        О компании
+                                    </div>
+                                    <h2 class="titling__title">
+                                        Tecson Industry Kazakhstan
+                                    </h2>
+                                    <div class="about__images">
+                                        <picture class="about__img">
+                                            <img src="images/about-img-1.jpg" alt="img">
+                                        </picture>
+                                        <picture class="about__img">
+                                            <img src="images/about-img-2.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                    <p class="titling__text">
+                                        Tecson Industry Kazakhstan — казахстанская производственная компания,
+                                        специализирующаяся на промышленных решениях в области герметизации для
+                                        нефтегазовой,
+                                        нефтехимической, энергетической и других отраслей промышленности.
+                                        <br> <br>
+                                        Компания расположена в Атырау и развивает местное производство промышленных
+                                        уплотнений, сочетая международный опыт и возможности местного производства.
+                                        <br> <br>
+                                        Основная продукция компании включает спирально-навитые прокладки, прокладки
+                                        Kammprofile, кольцевые уплотнения RTJ, плоские прокладки, изоляционные комплекты
+                                        и
+                                        другие промышленные уплотнительные решения.
+                                        <br> <br>
+                                        Цель компании — обеспечивать заказчиков надёжными уплотнительными решениями,
+                                        качественной продукцией и оперативной поддержкой на местном рынке.
+                                    </p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="main__advantages advantages">
+                <section class="main__production production">
                     <div class="container">
-                        <div class="advantages__titling titling" data-aos="fade-right">
+                        <div class="production__titling titling" data-aos="fade">
+                            <picture class="titling__decor">
+                                <img src="images/decor.png" alt="decor">
+                            </picture>
+                            <div class="titling__wrapper">
+                                <div class="titling__suptext">
+                                    Производство
+                                </div>
+                                <h2 class="titling__title">
+                                    Местное производство в Атырау
+                                </h2>
+                            </div>
+                            <p class="titling__text">
+                                Tecson Industry Kazakhstan развивает производство промышленных прокладок и
+                                уплотнений в
+                                Атырау. Компания производит решения в соответствии с техническими требованиями и
+                                условиями
+                                эксплуатации заказчика.
+                            </p>
+                        </div>
+                        <div class="production__items">
+                            <a class="production__item production-item" href="#" data-aos="zoom-in">
+                                <picture class="production-item__img">
+                                    <img src="images/production-img-1.jpg" alt="img">
+                                </picture>
+                                <div class="production-item__digits">
+                                    01 / 05
+                                </div>
+                                <h5 class="production-item__title">
+                                    Спирально-навитые прокладки
+                                </h5>
+                            </a>
+                            <a class="production__item production-item" href="#" data-aos="zoom-in">
+                                <picture class="production-item__img">
+                                    <img src="images/production-img-2.jpg" alt="img">
+                                </picture>
+                                <div class="production-item__digits">
+                                    02 / 05
+                                </div>
+                                <h5 class="production-item__title">
+                                    Процесс изготовления
+                                </h5>
+                            </a>
+                            <a class="production__item production-item" href="#" data-aos="zoom-in">
+                                <picture class="production-item__img">
+                                    <img src="images/production-img-3.jpg" alt="img">
+                                </picture>
+                                <div class="production-item__digits">
+                                    03 / 05
+                                </div>
+                                <h5 class="production-item__title">
+                                    Контроль продукции
+                                </h5>
+                            </a>
+                            <a class="production__item production-item" href="#" data-aos="zoom-in">
+                                <picture class="production-item__img">
+                                    <img src="images/production-img-4.jpg" alt="img">
+                                </picture>
+                                <div class="production-item__digits">
+                                    04 / 05
+                                </div>
+                                <h5 class="production-item__title">
+                                    Готовые изделия
+                                </h5>
+                            </a>
+                            <a class="production__item production-item" href="#" data-aos="zoom-in">
+                                <picture class="production-item__img">
+                                    <img src="images/production-img-5.jpg" alt="img">
+                                </picture>
+                                <div class="production-item__digits">
+                                    05 / 05
+                                </div>
+                                <h5 class="production-item__title">
+                                    Упаковку продукции
+                                </h5>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__about about about--third">
+                    <div class="container">
+                        <div class="about__inner">
+                            <div class="about__images" data-aos="zoom-in">
+                                <picture class="about__img">
+                                    <img src="images/about-img-1.jpg" alt="img">
+                                </picture>
+                            </div>
+                            <div class="about__body">
+                                <div class="about__titling titling" data-aos="fade-right">
+                                    <picture class="titling__decor">
+                                        <img src="images/decor.png" alt="decor">
+                                    </picture>
+                                    <div class="titling__suptext">
+                                        Наши цели
+                                    </div>
+                                    <h2 class="titling__title">
+                                        Tecson Industry Kazakhstan
+                                    </h2>
+                                    <div class="about__images">
+                                        <picture class="about__img">
+                                            <img src="images/about-img-1.jpg" alt="img">
+                                        </picture>
+                                        <picture class="about__img">
+                                            <img src="images/about-img-2.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                    <p class="titling__text">
+                                        Tecson Industry Kazakhstan — казахстанская производственная компания,
+                                        специализирующаяся на промышленных решениях в области герметизации для
+                                        нефтегазовой, нефтехимической, энергетической и других отраслей промышленности.
+                                        <br> <br>
+                                        Компания расположена в Атырау и развивает местное производство промышленных
+                                        уплотнений, сочетая международный опыт и возможности местного производства.
+                                        <br> <br>
+                                        Основная продукция компании включает спирально-навитые прокладки, прокладки
+                                        Kammprofile, кольцевые уплотнения RTJ, плоские прокладки, изоляционные комплекты
+                                        и другие промышленные уплотнительные решения.
+                                        <br> <br>
+                                        Цель компании — обеспечивать заказчиков надёжными уплотнительными решениями,
+                                        качественной продукцией и оперативной поддержкой на местном рынке.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about__images" data-aos="zoom-in">
+                                <picture class="about__img">
+                                    <img src="images/about-img-2.jpg" alt="img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__clients clients">
+                    <div class="container">
+                        <div class="clients__titling titling titling--centered" data-aos="fade-up">
+                            <picture class="titling__decor">
+                                <img src="images/decor.png" alt="decor">
+                            </picture>
+                            <div class="titling__suptext">
+                                Наши клиенты
+                            </div>
                             <h2 class="titling__title">
-                                Наши преимущества
+                                Нам доверяют
                             </h2>
                         </div>
-                        <div class="advantages__items">
-                            <div class="advantages__item advantages-item" data-aos="zoom-in">
-                                <div class="advantages-item__head">
-                                    <h5 class="advantages-item__title">
-                                        Оперативность
-                                    </h5>
-                                    <picture class="advantages-item__icon">
-                                        <img src="images/advantages-icon-1.svg" alt="icon">
-                                    </picture>
+                        <div class="clients__inner">
+                            <div class="clients__swiper swiper" data-aos="fade-up">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-1.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-2.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-3.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-4.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-5.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-6.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-7.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-8.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-9.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-10.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-11.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-12.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-1.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-2.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-3.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-4.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-5.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-6.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-7.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-8.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-9.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-10.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-11.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="clients__client client">
+                                            <picture class="client__img">
+                                                <img src="images/client-img-12.png" alt="client">
+                                            </picture>
+                                        </div>
+                                    </div>
                                 </div>
-                                <ul class="advantages-item__list">
-                                    <li class="advantages-item__point">
-                                        Быстрая обработка заявки
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        Расчет маршрута в течение 5 минут
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        Поставка транспортного средства от 2-х до 24 часов
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="advantages__item advantages-item" data-aos="zoom-in" data-aos-delay="250">
-                                <div class="advantages-item__head">
-                                    <h5 class="advantages-item__title">
-                                        Гарантия
-                                    </h5>
-                                    <picture class="advantages-item__icon">
-                                        <img src="images/advantages-icon-2.svg" alt="icon">
-                                    </picture>
-                                </div>
-                                <ul class="advantages-item__list">
-                                    <li class="advantages-item__point">
-                                        Контроль доставки груза на всем пути следования
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        Гарантия своевременной доставки груза
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        На связи с заказчиком 24 часа в сутки
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="advantages__item advantages-item" data-aos="zoom-in" data-aos-delay="500">
-                                <div class="advantages-item__head">
-                                    <h5 class="advantages-item__title">
-                                        Профессионализм
-                                    </h5>
-                                    <picture class="advantages-item__icon">
-                                        <img src="images/advantages-icon-3.svg" alt="icon">
-                                    </picture>
-                                </div>
-                                <ul class="advantages-item__list">
-                                    <li class="advantages-item__point">
-                                        Полная материальная ответственность за сохранность груза
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        Готовые решения в форс - мажорных ситуациях
-                                    </li>
-                                    <li class="advantages-item__point">
-                                        Четкая, своевременная работа с документами. Белая бухгалтерия
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="main__certificates certificates" data-aos="fade-up">
+                <section class="main__about about about--right">
                     <div class="container">
-                        <div class="certificates__inner">
-                            <div class="certificates__titling titling titling--white" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    Сертификаты
-                                </h2>
+                        <div class="about__inner">
+                            <div class="about__body">
+                                <div class="about__titling titling" data-aos="fade-right">
+                                    <picture class="titling__decor">
+                                        <img src="images/decor.png" alt="decor">
+                                    </picture>
+                                    <div class="titling__suptext">
+                                        О компании
+                                    </div>
+                                    <h2 class="titling__title">
+                                        Наша мисия <br>
+                                        и не только
+                                    </h2>
+                                    <div class="about__images">
+                                        <picture class="about__img">
+                                            <img src="images/about-img-2.jpg" alt="img">
+                                        </picture>
+                                        <picture class="about__img">
+                                            <img src="images/about-img-1.jpg" alt="img">
+                                        </picture>
+                                    </div>
+                                    <p class="titling__text">
+                                        Tecson Industry Kazakhstan — казахстанская производственная компания,
+                                        специализирующаяся на промышленных решениях в области герметизации для
+                                        нефтегазовой, нефтехимической, энергетической и других отраслей промышленности.
+                                        <br> <br>
+                                        Компания расположена в Атырау и развивает местное производство промышленных
+                                        уплотнений, сочетая международный опыт и возможности местного производства.
+                                        <br> <br>
+                                        Основная продукция компании включает спирально-навитые прокладки, прокладки
+                                        Kammprofile, кольцевые уплотнения RTJ, плоские прокладки, изоляционные комплекты
+                                        и другие промышленные уплотнительные решения.
+                                        <br> <br>
+                                        Цель компании — обеспечивать заказчиков надёжными уплотнительными решениями,
+                                        качественной продукцией и оперативной поддержкой на местном рынке.
+                                    </p>
+                                </div>
                             </div>
-                            <picture class="certificates__bg">
-                                <img src="images/certificates-bg.jpg" alt="bg">
+                            <div class="about__images" data-aos="zoom-in">
+                                <picture class="about__img">
+                                    <img src="images/about-img-2.jpg" alt="img">
+                                </picture>
+                                <picture class="about__img">
+                                    <img src="images/about-img-1.jpg" alt="img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__certificates certificates">
+                    <div class="container">
+                        <div class="clients__titling titling titling--centered" data-aos="fade-up">
+                            <picture class="titling__decor">
+                                <img src="images/decor.png" alt="decor">
                             </picture>
-                            <div class="certificates__slider swiper" data-aos="fade-up">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-1.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-1.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-2.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-2.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-3.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-3.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-4.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-4.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-5.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-5.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-1.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-1.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-2.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-2.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-3.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-3.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-4.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-4.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a class="certificates__item certificates-item"
-                                            href="images/certificates-img-5.jpg" data-fancybox="certificates">
-                                            <picture class="certificates-item__img">
-                                                <img src="images/certificates-img-5.jpg" alt="img">
-                                            </picture>
-                                        </a>
-                                    </div>
+                            <div class="titling__suptext">
+                                Сертификаты
+                            </div>
+                            <h2 class="titling__title">
+                                Наши сертификаты
+                            </h2>
+                        </div>
+                        <div class="certificates__swiper swiper" data-aos="fade-up">
+                            <div class="swiper-wrapper">
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-1.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-2.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-3.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-4.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-5.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-1.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-2.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-3.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-4.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="certificates__slide swiper-slide">
+                                    <a class="certificates__view" href="images/certificates-img-1.jpg"
+                                        data-fancybox="certificates">
+                                        <picture class="certificates__img">
+                                            <img src="images/certificates-img-5.jpg" alt="img">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="certificates__navigation navigation">
+                                <div class="navigation__arrow arrow arrow-certificates--prev">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5988_214599)">
+                                            <g clip-path="url(#clip1_5988_214599)">
+                                                <path
+                                                    d="M3.83913 10.8854C3.92499 10.8854 4.01494 10.8854 4.1008 10.8854C10.2991 10.8895 16.5015 10.8936 22.6998 10.8977C22.8797 10.8977 23.0718 10.9059 23.2436 10.955C23.726 11.094 24.0408 11.5805 23.9959 12.067C23.9468 12.5781 23.5625 12.9911 23.0596 13.0565C22.9165 13.0728 22.7734 13.0728 22.6303 13.0728C16.4524 13.0688 10.2705 13.0647 4.09262 13.0606C3.99449 13.0606 3.89637 13.0606 3.79824 13.0606C3.79415 13.0769 3.78598 13.0974 3.78189 13.1137C3.83504 13.171 3.88819 13.2282 3.94134 13.2854C5.06979 14.4139 6.19824 15.5383 7.3226 16.6708C7.8623 17.2146 7.76008 17.9873 7.11409 18.3921C6.67661 18.666 6.18598 18.6088 5.79347 18.2163C4.95531 17.3863 4.12533 16.5522 3.29126 15.7182C2.33044 14.7614 1.37371 13.8047 0.412893 12.8439C-0.147243 12.2837 -0.143154 11.6705 0.421071 11.1103C2.18734 9.35223 3.94952 7.59414 5.7117 5.82787C6.06741 5.47216 6.47218 5.32906 6.95463 5.51713C7.69058 5.80742 7.88274 6.70691 7.32669 7.2834C6.66843 7.9662 5.99381 8.62855 5.32329 9.29908C4.86128 9.76109 4.39926 10.2231 3.93725 10.6892C3.89228 10.7342 3.85139 10.7832 3.80642 10.8323C3.82277 10.8487 3.83095 10.8691 3.83913 10.8854Z"
+                                                    fill="#E36028" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5988_214599">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(24 1.04907e-06) rotate(90)" />
+                                            </clipPath>
+                                            <clipPath id="clip1_5988_214599">
+                                                <rect width="13.1285" height="24" fill="white"
+                                                    transform="translate(24 5.43555) rotate(90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="navigation__pagination pagination pagination--certificates"></div>
+                                <div class="navigation__arrow arrow arrow-certificates--next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5988_214646)">
+                                            <g clip-path="url(#clip1_5988_214646)">
+                                                <path
+                                                    d="M20.1608 10.8854C20.0749 10.8854 19.9849 10.8854 19.8991 10.8854C13.7008 10.8895 7.4984 10.8936 1.3001 10.8977C1.1202 10.8977 0.928041 10.9059 0.75632 10.955C0.273867 11.094 -0.0409538 11.5805 0.00402063 12.067C0.0530837 12.5781 0.437411 12.9911 0.940307 13.0565C1.08341 13.0728 1.22651 13.0728 1.36961 13.0728C7.54746 13.0688 13.7294 13.0647 19.9073 13.0606C20.0054 13.0606 20.1035 13.0606 20.2016 13.0606C20.2057 13.0769 20.2139 13.0974 20.218 13.1137C20.1648 13.171 20.1117 13.2282 20.0585 13.2854C18.9301 14.4139 17.8016 15.5383 16.6773 16.6708C16.1376 17.2146 16.2398 17.9873 16.8858 18.3921C17.3233 18.666 17.8139 18.6088 18.2064 18.2163C19.0446 17.3863 19.8745 16.5522 20.7086 15.7182C21.6694 14.7614 22.6262 13.8047 23.587 12.8439C24.1471 12.2837 24.143 11.6705 23.5788 11.1103C21.8125 9.35223 20.0504 7.59414 18.2882 5.82787C17.9325 5.47216 17.5277 5.32906 17.0452 5.51713C16.3093 5.80742 16.1171 6.70691 16.6732 7.2834C17.3314 7.9662 18.0061 8.62855 18.6766 9.29908C19.1386 9.76109 19.6006 10.2231 20.0626 10.6892C20.1076 10.7342 20.1485 10.7832 20.1935 10.8323C20.1771 10.8487 20.1689 10.8691 20.1608 10.8854Z"
+                                                    fill="#E36028" />
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5988_214646">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 1.04907e-06)" />
+                                            </clipPath>
+                                            <clipPath id="clip1_5988_214646">
+                                                <rect width="13.1285" height="24" fill="white"
+                                                    transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 5.43555)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="main__partners partners">
-                    <div class="container">
-                        <div class="partners__inner">
-                            <div class="partners__titling titling" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    Наши клиенты
-                                </h2>
-                            </div>
-                            <div class="partners__slider swiper" data-aos="fade-up">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-1.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
+                <div class="main__popup popup popup--application" aria-hidden="true">
+                    <div class="popup__wrapper">
+                        <div class="popup__inner">
+                            <button class="popup__close" type="button" aria-label="Закрыть">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L18 18M18 2L2 18" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                    <section class="application">
+                        <picture class="application__bg">
+                            <img src="images/application-bg.jpg" alt="bg">
+                        </picture>
+                        <div class="application__inner">
+                            <div class="application__body">
+                                <div class="application__titling titling titling--white">
+                                    <div class="titling__suptext">
+                                        Остались вопросы?
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-2.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-3.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-4.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-5.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-6.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-7.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-6.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partners__item partners-item">
-                                            <picture class="partners-item__img"> <img src="images/partners-img-7.png"
-                                                    alt="img">
-                                            </picture>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="partners__navigation navigation">
-                                    <div class="navigation__arrow arrow arrow--partners-prev">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_258848)">
-                                                <g clip-path="url(#clip1_5903_258848)">
-                                                    <path
-                                                        d="M3.83919 10.8889C3.92505 10.8889 4.015 10.8889 4.10086 10.8889C10.2992 10.893 16.5015 10.897 22.6998 10.9011C22.8797 10.9011 23.0719 10.9093 23.2436 10.9584C23.7261 11.0974 24.0409 11.5839 23.9959 12.0705C23.9469 12.5815 23.5625 12.9945 23.0596 13.0599C22.9165 13.0763 22.7734 13.0763 22.6303 13.0763C16.4525 13.0722 10.2705 13.0681 4.09268 13.064C3.99456 13.064 3.89643 13.064 3.7983 13.064C3.79421 13.0803 3.78604 13.1008 3.78195 13.1171C3.8351 13.1744 3.88825 13.2316 3.9414 13.2889C5.06985 14.4173 6.1983 15.5417 7.32266 16.6742C7.86236 17.218 7.76014 17.9907 7.11415 18.3955C6.67667 18.6694 6.18604 18.6122 5.79353 18.2197C4.95537 17.3897 4.12539 16.5556 3.29132 15.7216C2.3305 14.7648 1.37377 13.8081 0.412954 12.8473C-0.147182 12.2872 -0.143093 11.6739 0.421132 11.1137C2.1874 9.35565 3.94958 7.59755 5.71176 5.83128C6.06747 5.47558 6.47224 5.33248 6.95469 5.52055C7.69064 5.81084 7.8828 6.71033 7.32675 7.28682C6.66849 7.96962 5.99387 8.63197 5.32335 9.30249C4.86134 9.7645 4.39933 10.2265 3.93732 10.6926C3.89234 10.7376 3.85146 10.7867 3.80648 10.8357C3.82284 10.8521 3.83101 10.8725 3.83919 10.8889Z"
-                                                        fill="#D6B17C" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_258848">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="translate(24 1.04908e-06) rotate(90)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_258848">
-                                                    <rect width="13.1285" height="24" fill="white"
-                                                        transform="translate(24 5.4375) rotate(90)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="navigation__pagination pagination pagination--partners"></div>
-                                    <div class="navigation__arrow arrow arrow--partners-next">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_258895)">
-                                                <g clip-path="url(#clip1_5903_258895)">
-                                                    <path
-                                                        d="M20.1608 10.8889C20.0749 10.8889 19.9849 10.8889 19.8991 10.8889C13.7008 10.893 7.4984 10.897 1.3001 10.9011C1.1202 10.9011 0.928041 10.9093 0.75632 10.9584C0.273867 11.0974 -0.0409538 11.5839 0.00402063 12.0705C0.0530837 12.5815 0.437411 12.9945 0.940307 13.0599C1.08341 13.0763 1.22651 13.0763 1.36961 13.0763C7.54746 13.0722 13.7294 13.0681 19.9073 13.064C20.0054 13.064 20.1035 13.064 20.2016 13.064C20.2057 13.0803 20.2139 13.1008 20.218 13.1171C20.1648 13.1744 20.1117 13.2316 20.0585 13.2889C18.9301 14.4173 17.8016 15.5417 16.6773 16.6742C16.1376 17.218 16.2398 17.9907 16.8858 18.3955C17.3233 18.6694 17.8139 18.6122 18.2064 18.2197C19.0446 17.3897 19.8745 16.5556 20.7086 15.7216C21.6694 14.7648 22.6262 13.8081 23.587 12.8473C24.1471 12.2872 24.143 11.6739 23.5788 11.1137C21.8125 9.35565 20.0504 7.59755 18.2882 5.83128C17.9325 5.47558 17.5277 5.33248 17.0452 5.52055C16.3093 5.81084 16.1171 6.71033 16.6732 7.28682C17.3314 7.96962 18.0061 8.63197 18.6766 9.30249C19.1386 9.7645 19.6006 10.2265 20.0626 10.6926C20.1076 10.7376 20.1485 10.7867 20.1935 10.8357C20.1771 10.8521 20.1689 10.8725 20.1608 10.8889Z"
-                                                        fill="#D6B17C" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_258895">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 1.04908e-06)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_258895">
-                                                    <rect width="13.1285" height="24" fill="white"
-                                                        transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 5.4375)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                    <h1 class="titling__title">
+                                        Оставьте заявку
+                                    </h1>
+                                    <p class="titling__text">
+                                        Укажите контактные данные и кратко опишите необходимую продукцию. Представитель
+                                        компании свяжется с вами для уточнения деталей.
+                                    </p>
                                 </div>
                             </div>
+                            <form class="application__form form" action="#" method="post">
+                                <div class="form__inner">
+                                    <input class="form__input" type="text" placeholder="Имя">
+                                    <input class="form__input" type="tel" placeholder="Номер телефона">
+                                    <input class="form__input" type="text" placeholder="Название компании">
+                                    <input class="form__input" type="text" placeholder="Комментарий">
+                                </div>
+                                <button class="form__button btn btn--orange" type="submit">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </section>
                         </div>
                     </div>
-                </section>
-                <section class="main__steps steps" data-aos="fade-up">
+                </div>
+                <section class="main__contacts contacts">
                     <div class="container">
-                        <div class="steps__inner">
-                            <div class="steps__titling titling titling--white" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    Порядок выполнения заявки
+                        <div class="contacts__inner">
+                            <div class="contacts__body" data-aos="fade-right">
+                                <h2 class="contacts__title">
+                                    Контакты
                                 </h2>
+                                <div class="contacts__subtitle">
+                                    ТОО «Tecson Industry Kazakhstan»
+                                </div>
+                                <div class="contacts__connections connections">
+                                    <ul class="connections__list">
+                                        <li class="connections__item">
+                                            <div class="connections__icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1 18.7372V4.19176H3.5071L9.34517 14.1989H9.46591V4.19176H12.0014V18.7372H9.52983L3.67045 8.76562H3.54972V18.7372H1ZM13.9474 14.4901V12.8494H20.2259V14.4901H13.9474ZM17.0795 11.6705C16.3646 11.6705 15.7443 11.5166 15.2188 11.2088C14.6979 10.901 14.2955 10.482 14.0114 9.9517C13.7273 9.4214 13.5852 8.82008 13.5852 8.14773V7.52273C13.5852 6.85511 13.7273 6.25616 14.0114 5.72585C14.2955 5.19081 14.6979 4.76941 15.2188 4.46165C15.7396 4.15388 16.3551 4 17.0653 4C17.785 4 18.4029 4.15388 18.919 4.46165C19.4399 4.76941 19.84 5.19081 20.1193 5.72585C20.4034 6.25616 20.5455 6.85511 20.5455 7.52273V8.14773C20.5455 8.81534 20.4058 9.4143 20.1264 9.9446C19.8518 10.4749 19.4541 10.8963 18.9332 11.2088C18.4171 11.5166 17.7992 11.6705 17.0795 11.6705ZM17.0795 9.90909C17.5294 9.90909 17.8774 9.75047 18.1236 9.43324C18.3745 9.11127 18.5 8.68277 18.5 8.14773V7.52273C18.5 6.99242 18.3769 6.57102 18.1307 6.25852C17.8845 5.94602 17.5294 5.78977 17.0653 5.78977C16.6061 5.78977 16.2533 5.94602 16.0071 6.25852C15.7656 6.57102 15.6449 6.99242 15.6449 7.52273V8.14773C15.6449 8.68277 15.768 9.11127 16.0142 9.43324C16.2604 9.75047 16.6155 9.90909 17.0795 9.90909Z"
+                                                        fill="#E36028" />
+                                                </svg>
+                                            </div>
+                                            <div class="connections__box">
+                                                <div class="connections__suptext">
+                                                    БИН:
+                                                </div>
+                                                <div class="connections__text">
+                                                    210640023251
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="connections__item">
+                                            <div class="connections__icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_5988_184459)">
+                                                        <path
+                                                            d="M10.9721 22.0001C10.1822 21.2918 9.38376 20.6093 8.62395 19.8881C6.98415 18.3342 5.49459 16.6471 4.24542 14.7584C3.38688 13.4577 2.68288 12.0797 2.36522 10.5344C2.05615 9.0405 2.15488 7.56382 2.62707 6.11289C3.15078 4.49884 4.06083 3.14665 5.36151 2.0606C6.6579 0.978841 8.14747 0.309183 9.8259 0.0816704C11.3841 -0.128671 12.8909 0.0644997 14.3418 0.665475C15.7627 1.25357 16.9561 2.15504 17.909 3.36557C18.832 4.53748 19.4286 5.85962 19.6776 7.3363C19.9523 8.95894 19.7892 10.5386 19.1797 12.0711C18.5057 13.7625 17.5012 15.252 16.3637 16.66C14.8097 18.5874 13.0583 20.3217 11.1309 21.8756C11.1008 21.9014 11.0579 21.9314 10.9721 22.0001ZM10.9978 19.7379C11.045 19.7035 11.0794 19.6778 11.1094 19.652C12.2169 18.6561 13.2858 17.6216 14.2645 16.4969C15.5609 15.0073 16.7328 13.4405 17.5184 11.6075C18.2095 9.99347 18.3082 8.3365 17.7545 6.68811C16.8487 4.00089 14.9642 2.36108 12.1654 1.82879C10.766 1.56265 9.40093 1.76011 8.10454 2.34821C6.45186 3.09943 5.2499 4.30996 4.52015 5.96694C3.902 7.37494 3.73888 8.84304 4.08229 10.3498C4.38707 11.6891 5.04386 12.8653 5.79507 13.9943C7.06142 15.883 8.60678 17.5271 10.2595 19.0768C10.5041 19.3 10.7488 19.5146 10.9978 19.7379Z"
+                                                            fill="#E36028" />
+                                                        <path
+                                                            d="M10.9935 12.8822C8.74418 12.8779 6.91979 11.045 6.92408 8.7956C6.92837 6.55053 8.77423 4.71326 11.015 4.72614C13.2601 4.73473 15.0931 6.57629 15.0845 8.81707C15.0759 11.0664 13.2429 12.8908 10.9935 12.8822ZM10.9978 11.1652C12.2985 11.1652 13.3588 10.1092 13.3631 8.81278C13.3631 7.51209 12.3028 6.44751 11.0064 6.44751C9.71003 6.44321 8.64545 7.5078 8.64115 8.80419C8.64115 10.1006 9.69715 11.1609 10.9978 11.1652Z"
+                                                            fill="#E36028" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_5988_184459">
+                                                            <rect width="17.6215" height="22" fill="white"
+                                                                transform="translate(2.18921)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div class="connections__box">
+                                                <div class="connections__suptext">
+                                                    Адрес:
+                                                </div>
+                                                <a class="connections__link" href="#">
+                                                    Республика Казахстан, г. Атырау,
+                                                    микрорайон Каспий, дом 71А
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="connections__item">
+                                            <div class="connections__icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_5988_184451)">
+                                                        <path
+                                                            d="M3.57401 11.0002C3.57401 8.28976 3.56921 5.57933 3.57401 2.86891C3.57881 1.43454 4.50947 0.3072 5.91505 0.0385566C6.10214 0.00497618 6.29883 0.000178968 6.48592 0.000178968C9.49377 0.000178968 12.4968 -0.00461824 15.5047 0.000178968C17.2077 0.000178968 18.4214 1.21387 18.4214 2.91688C18.4214 8.30415 18.4214 13.6914 18.4214 19.0787C18.4214 20.7817 17.2077 21.9954 15.5047 21.9954C12.4968 22.0002 9.49377 22.0002 6.48592 21.9954C4.7877 21.9954 3.57401 20.7769 3.56921 19.0787C3.57401 16.3874 3.57401 13.6914 3.57401 11.0002ZM5.11391 10.981C5.11391 13.677 5.11391 16.3683 5.11391 19.0643C5.11391 19.947 5.63681 20.4651 6.5147 20.4651C9.50336 20.4651 12.492 20.4651 15.4855 20.4651C15.6294 20.4651 15.7781 20.4603 15.9124 20.4267C16.5361 20.2732 16.8863 19.7695 16.8863 19.0403C16.8863 14.8427 16.8863 10.6452 16.8863 6.45242C16.8863 5.26272 16.8911 4.06821 16.8863 2.8785C16.8815 2.21649 16.4977 1.6888 15.8932 1.58326C15.5191 1.52089 15.1305 1.55927 14.7467 1.55447C14.6316 1.77035 14.5116 1.98622 14.3965 2.2021C14.3773 2.23568 14.3581 2.27406 14.3389 2.30764C14.1471 2.62425 13.8688 2.81134 13.4946 2.81134C11.8396 2.81614 10.1846 2.81614 8.52953 2.81134C8.13616 2.81134 7.84832 2.61466 7.66123 2.26926C7.56049 2.07737 7.46934 1.88068 7.3686 1.69359C7.33982 1.63603 7.27746 1.55447 7.22948 1.55447C6.82172 1.55927 6.40436 1.53049 6.01579 1.61684C5.44013 1.74636 5.11391 2.26446 5.11391 2.93127C5.11391 5.60812 5.11391 8.29455 5.11391 10.981Z"
+                                                            fill="#E36028" />
+                                                        <path
+                                                            d="M11 18.9254C10.6642 18.9254 10.3284 18.9302 9.99261 18.9254C9.54647 18.9158 9.22026 18.604 9.21066 18.1866C9.20107 17.7549 9.51289 17.4095 9.96862 17.3951C10.6546 17.3807 11.3406 17.3807 12.0266 17.3951C12.4776 17.4047 12.7942 17.7549 12.7846 18.1866C12.775 18.604 12.4488 18.9158 12.0026 18.9254C11.6716 18.935 11.3358 18.9254 11 18.9254Z"
+                                                            fill="#E36028" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_5988_184451">
+                                                            <rect width="14.8522" height="22" fill="white"
+                                                                transform="translate(3.57397)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div class="connections__box">
+                                                <div class="connections__suptext">
+                                                    Телефон:
+                                                </div>
+                                                <a class="connections__link" href="tel:87013722695">
+                                                    8 701 372 2695
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="connections__item">
+                                            <div class="connections__icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_5988_213202)">
+                                                        <g clip-path="url(#clip1_5988_213202)">
+                                                            <path
+                                                                d="M10.9975 2.37598C13.1941 2.37598 15.3858 2.37598 17.5823 2.37598C20.1327 2.37598 22.0049 4.24822 22.0049 6.7986C22.0049 9.58485 22.0049 12.3662 22.0049 15.1524C22.0049 17.7028 20.1327 19.5751 17.5823 19.5751C13.1941 19.5751 8.80096 19.5751 4.41273 19.5751C1.86236 19.5751 -0.0098877 17.7028 -0.0098877 15.1524C-0.0098877 12.3465 -0.0098877 9.53571 -0.0098877 6.72489C-0.00497367 4.5922 1.41518 2.86246 3.50855 2.4546C3.79357 2.40055 4.09332 2.38089 4.38816 2.37598C6.59456 2.37598 8.79604 2.37598 10.9975 2.37598ZM10.9975 4.09589C8.80096 4.09589 6.6093 4.09589 4.41273 4.09589C2.81568 4.09589 1.71002 5.20154 1.71002 6.7986C1.71002 9.57994 1.71002 12.3662 1.71002 15.1475C1.71002 16.7397 2.82059 17.8502 4.41273 17.8502C8.80096 17.8502 13.1892 17.8502 17.5774 17.8502C19.1745 17.8502 20.2801 16.7397 20.2801 15.1475C20.2801 12.3662 20.2801 9.57994 20.2801 6.7986C20.2801 5.20645 19.1695 4.09589 17.5774 4.09589C15.3858 4.09589 13.1941 4.09589 10.9975 4.09589Z"
+                                                                fill="#E36028" />
+                                                            <path
+                                                                d="M13.6019 12.219C13.3317 12.4696 13.0958 12.6809 12.8697 12.9069C11.8132 13.9635 10.1818 13.9635 9.13017 12.902C8.90412 12.676 8.66825 12.4647 8.4422 12.2485C8.2309 12.4548 7.99503 12.6711 7.7739 12.8971C6.84023 13.8652 5.91148 14.8332 4.98273 15.8013C4.59452 16.2092 4.06381 16.2485 3.69526 15.8947C3.32671 15.5458 3.35128 15.0101 3.73948 14.6072C4.8648 13.4377 5.98519 12.2681 7.1105 11.0986C7.14982 11.0593 7.18421 11.015 7.23827 10.9561C6.8992 10.6072 6.56505 10.2583 6.23089 9.9143C5.40042 9.05434 4.56504 8.1993 3.73457 7.33935C3.35128 6.94623 3.33162 6.42043 3.68543 6.06662C4.04415 5.70789 4.5847 5.73738 4.9729 6.13541C6.73212 7.9536 8.49626 9.76688 10.2555 11.5851C10.7764 12.1207 11.2285 12.1207 11.7493 11.5802C13.5135 9.76196 15.2727 7.94869 17.0319 6.1305C17.4103 5.73738 17.9361 5.70298 18.2997 6.04696C18.6683 6.39586 18.6535 6.93148 18.2604 7.33443C17.1449 8.48432 16.0245 9.63911 14.9091 10.789C14.8648 10.8332 14.8206 10.8824 14.7616 10.9512C15.1204 11.3246 15.4742 11.6981 15.828 12.0666C16.6437 12.9168 17.4644 13.7669 18.2801 14.617C18.6535 15.0101 18.6634 15.5458 18.2997 15.8898C17.9312 16.2337 17.4054 16.1993 17.0319 15.8062C15.9263 14.6563 14.8206 13.5015 13.715 12.3517C13.6658 12.3123 13.6314 12.2583 13.6019 12.219Z"
+                                                                fill="#E36028" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_5988_213202">
+                                                            <rect width="22" height="22" fill="white" />
+                                                        </clipPath>
+                                                        <clipPath id="clip1_5988_213202">
+                                                            <rect width="22.0197" height="17.204" fill="white"
+                                                                transform="translate(-0.0098877 2.37598)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div class="connections__box">
+                                                <div class="connections__suptext">
+                                                    Email:
+                                                </div>
+                                                <a class="connections__link"
+                                                    href="mailto:zhangeldy.klushev@tecsonindustry.com">
+                                                    zhangeldy.klushev@tecsonindustry.com
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="contacts__link btn btn--orange" href="#">
+                                    Оставить заявку
+                                </a>
                             </div>
-                            <picture class="steps__bg">
-                                <img src="images/steps-bg.jpg" alt="bg">
+                            <picture class="contacts__map" data-aos="zoom-out">
+                                <img src="images/map-img.jpg" alt="img">
                             </picture>
-                            <ol class="steps__list">
-                                <li class="steps__item steps-item" data-aos="zoom-in">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        Ваш звонок
-                                    </div>
-                                    <picture class="steps-item__arrow">
-                                        <img src="images/steps-arrow-1.svg" alt="arrow" data-aos="fade"
-                                            data-aos-delay="250">
-                                    </picture>
-                                </li>
-                                <li class="steps__item steps-item" data-aos="zoom-in" data-aos-delay="250">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        5 минут — расчет <br> стоимости заявки
-                                    </div>
-                                    <picture class="steps-item__arrow">
-                                        <img src="images/steps-arrow-2.svg" alt="arrow" data-aos="fade"
-                                            data-aos-delay="500">
-                                    </picture>
-                                </li>
-                                <li class="steps__item steps-item" data-aos="zoom-in" data-aos-delay="500">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        30 минут — <br> оформление проекта <br> договора и заявки на <br> перевозку
-                                    </div>
-                                    <picture class="steps-item__arrow">
-                                        <img src="images/steps-arrow-1.svg" alt="arrow" data-aos="fade"
-                                            data-aos-delay="750">
-                                    </picture>
-                                </li>
-                                <li class="steps__item steps-item" data-aos="zoom-in" data-aos-delay="750">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        От 2 до 24 часов — <br> подача машины под <br> погрузку
-                                    </div>
-                                    <picture class="steps-item__arrow">
-                                        <img src="images/steps-arrow-2.svg" alt="arrow" data-aos="fade"
-                                            data-aos-delay="1000">
-                                    </picture>
-                                </li>
-                                <li class="steps__item steps-item" data-aos="zoom-in" data-aos-delay="1000">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        Максимально быстро и <br> качественно — <br> доставка груза в пункт назначения
-                                    </div>
-                                    <picture class="steps-item__arrow">
-                                        <img src="images/steps-arrow-1.svg" alt="arrow" data-aos="fade"
-                                            data-aos-delay="1250">
-                                    </picture>
-                                </li>
-                                <li class="steps__item steps-item" data-aos="zoom-in" data-aos-delay="1250">
-                                    <div class="steps-item__head">
-                                        <div class="steps-item__digit">
-
-                                        </div>
-                                    </div>
-                                    <div class="steps-item__text">
-                                        В течение 5 дней — <br> получение документов <br> по перевозке
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </section>
-                <section class="main__gallery gallery">
-                    <div class="container">
-                        <div class="gallery__inner">
-                            <div class="gallery__titling titling" data-aos="fade-right">
-                                <h2 class="titling__title">
-                                    Наш автопарк
-                                </h2>
-                            </div>
-                            <div class="gallery__slider swiper" data-aos="fade-up">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="gallery__item gallery-item">
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-1.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-1.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-2.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-2.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-3.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-3.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-4.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-4.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-5.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-5.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="gallery__item gallery-item">
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-1.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-1.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-2.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-2.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-3.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-3.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-4.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-4.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-5.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-5.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="gallery__item gallery-item">
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-1.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-1.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-2.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-2.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-3.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-3.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-4.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-4.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                            <a class="gallery-item__view" data-aos="zoom-in"
-                                                href="images/gallery-img-5.jpg" data-fancybox="gallery">
-                                                <picture class="gallery-item__img">
-                                                    <img src="images/gallery-img-5.jpg" alt="img">
-                                                </picture>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gallery__navigation navigation">
-                                    <div class="navigation__arrow arrow arrow--gallery-prev">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_258848)">
-                                                <g clip-path="url(#clip1_5903_258848)">
-                                                    <path
-                                                        d="M3.83919 10.8889C3.92505 10.8889 4.015 10.8889 4.10086 10.8889C10.2992 10.893 16.5015 10.897 22.6998 10.9011C22.8797 10.9011 23.0719 10.9093 23.2436 10.9584C23.7261 11.0974 24.0409 11.5839 23.9959 12.0705C23.9469 12.5815 23.5625 12.9945 23.0596 13.0599C22.9165 13.0763 22.7734 13.0763 22.6303 13.0763C16.4525 13.0722 10.2705 13.0681 4.09268 13.064C3.99456 13.064 3.89643 13.064 3.7983 13.064C3.79421 13.0803 3.78604 13.1008 3.78195 13.1171C3.8351 13.1744 3.88825 13.2316 3.9414 13.2889C5.06985 14.4173 6.1983 15.5417 7.32266 16.6742C7.86236 17.218 7.76014 17.9907 7.11415 18.3955C6.67667 18.6694 6.18604 18.6122 5.79353 18.2197C4.95537 17.3897 4.12539 16.5556 3.29132 15.7216C2.3305 14.7648 1.37377 13.8081 0.412954 12.8473C-0.147182 12.2872 -0.143093 11.6739 0.421132 11.1137C2.1874 9.35565 3.94958 7.59755 5.71176 5.83128C6.06747 5.47558 6.47224 5.33248 6.95469 5.52055C7.69064 5.81084 7.8828 6.71033 7.32675 7.28682C6.66849 7.96962 5.99387 8.63197 5.32335 9.30249C4.86134 9.7645 4.39933 10.2265 3.93732 10.6926C3.89234 10.7376 3.85146 10.7867 3.80648 10.8357C3.82284 10.8521 3.83101 10.8725 3.83919 10.8889Z"
-                                                        fill="#D6B17C" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_258848">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="translate(24 1.04908e-06) rotate(90)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_258848">
-                                                    <rect width="13.1285" height="24" fill="white"
-                                                        transform="translate(24 5.4375) rotate(90)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="navigation__pagination pagination pagination--gallery"></div>
-                                    <div class="navigation__arrow arrow arrow--gallery-next">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_258895)">
-                                                <g clip-path="url(#clip1_5903_258895)">
-                                                    <path
-                                                        d="M20.1608 10.8889C20.0749 10.8889 19.9849 10.8889 19.8991 10.8889C13.7008 10.893 7.4984 10.897 1.3001 10.9011C1.1202 10.9011 0.928041 10.9093 0.75632 10.9584C0.273867 11.0974 -0.0409538 11.5839 0.00402063 12.0705C0.0530837 12.5815 0.437411 12.9945 0.940307 13.0599C1.08341 13.0763 1.22651 13.0763 1.36961 13.0763C7.54746 13.0722 13.7294 13.0681 19.9073 13.064C20.0054 13.064 20.1035 13.064 20.2016 13.064C20.2057 13.0803 20.2139 13.1008 20.218 13.1171C20.1648 13.1744 20.1117 13.2316 20.0585 13.2889C18.9301 14.4173 17.8016 15.5417 16.6773 16.6742C16.1376 17.218 16.2398 17.9907 16.8858 18.3955C17.3233 18.6694 17.8139 18.6122 18.2064 18.2197C19.0446 17.3897 19.8745 16.5556 20.7086 15.7216C21.6694 14.7648 22.6262 13.8081 23.587 12.8473C24.1471 12.2872 24.143 11.6739 23.5788 11.1137C21.8125 9.35565 20.0504 7.59755 18.2882 5.83128C17.9325 5.47558 17.5277 5.33248 17.0452 5.52055C16.3093 5.81084 16.1171 6.71033 16.6732 7.28682C17.3314 7.96962 18.0061 8.63197 18.6766 9.30249C19.1386 9.7645 19.6006 10.2265 20.0626 10.6926C20.1076 10.7376 20.1485 10.7867 20.1935 10.8357C20.1771 10.8521 20.1689 10.8725 20.1608 10.8889Z"
-                                                        fill="#D6B17C" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_258895">
-                                                    <rect width="24" height="24" fill="white"
-                                                        transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 1.04908e-06)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_258895">
-                                                    <rect width="13.1285" height="24" fill="white"
-                                                        transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 5.4375)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -804,275 +927,147 @@
                             <a class="footer__logo logo" href="#">
                                 <img src="images/logo-white.svg" alt="logo">
                             </a>
-                            <div class="footer__networks networks">
-                                <div class="networks__text">
-                                    Наши соцсети:
-                                </div>
-                                <ul class="networks__list">
-                                    <li class="networks__item">
-                                        <a class="networks__link" href="#">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.6">
-                                                    <path
-                                                        d="M11.5488 20V10.8777H14.6096L15.0688 7.32156H11.5488V5.05147C11.5488 4.0222 11.8335 3.32076 13.3111 3.32076L15.1926 3.31999V0.13923C14.8673 0.0969453 13.7503 0 12.4503 0C9.73573 0 7.87727 1.65697 7.87727 4.69927V7.32156H4.80725V10.8777H7.87727V20H11.5488Z"
-                                                        fill="white" />
-                                                </g>
-                                            </svg>
+                            <div class="footer__subtext">
+                                ТОО «Tecson Industry Kazakhstan»
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__suptitle">
+                                Меню
+                            </div>
+                            <nav class="footer__nav nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            О компании
                                         </a>
                                     </li>
-                                    <li class="networks__item">
-                                        <a class="networks__link" href="#">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.6" clip-path="url(#clip0_5903_256085)">
-                                                    <path
-                                                        d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM9.99998 15.4686C6.98454 15.4686 4.53139 13.0154 4.53139 9.99998C4.53139 6.98454 6.98454 4.53139 9.99998 4.53139C13.0154 4.53139 15.4686 6.98454 15.4686 9.99998C15.4686 13.0154 13.0154 15.4686 9.99998 15.4686V15.4686ZM15.5993 5.82106C14.7082 5.82106 13.9834 5.09627 13.9834 4.20516C13.9834 3.31405 14.7082 2.58911 15.5993 2.58911C16.4904 2.58911 17.2154 3.31405 17.2154 4.20516C17.2154 5.09627 16.4904 5.82106 15.5993 5.82106Z"
-                                                        fill="white" />
-                                                    <path
-                                                        d="M9.99996 5.70312C7.63119 5.70312 5.70386 7.63031 5.70386 9.99923C5.70386 12.368 7.63119 14.2953 9.99996 14.2953C12.3689 14.2953 14.2961 12.368 14.2961 9.99923C14.2961 7.63031 12.3689 5.70312 9.99996 5.70312V5.70312Z"
-                                                        fill="white" />
-                                                    <path
-                                                        d="M15.5994 3.76562C15.3549 3.76562 15.1559 3.9646 15.1559 4.20904C15.1559 4.45349 15.3549 4.65246 15.5994 4.65246C15.844 4.65246 16.0429 4.45364 16.0429 4.20904C16.0429 3.96445 15.844 3.76562 15.5994 3.76562Z"
-                                                        fill="white" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_5903_256085">
-                                                        <rect width="20" height="20" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            Клиенты
                                         </a>
                                     </li>
-                                    <li class="networks__item">
-                                        <a class="networks__link" href="#">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.6">
-                                                    <path
-                                                        d="M19.15 4.45C18.6075 3.485 18.0188 3.3075 16.82 3.24C15.6225 3.15875 12.6112 3.125 10.0025 3.125C7.38875 3.125 4.37625 3.15875 3.18 3.23875C1.98375 3.3075 1.39375 3.48375 0.84625 4.45C0.2875 5.41375 0 7.07375 0 9.99625C0 9.99875 0 10 0 10C0 10.0025 0 10.0038 0 10.0038V10.0063C0 12.9163 0.2875 14.5888 0.84625 15.5425C1.39375 16.5075 1.9825 16.6825 3.17875 16.7638C4.37625 16.8338 7.38875 16.875 10.0025 16.875C12.6112 16.875 15.6225 16.8337 16.8212 16.765C18.02 16.6837 18.6088 16.5088 19.1513 15.5438C19.715 14.59 20 12.9175 20 10.0075C20 10.0075 20 10.0038 20 10.0013C20 10.0013 20 9.99875 20 9.9975C20 7.07375 19.715 5.41375 19.15 4.45ZM7.5 13.75V6.25L13.75 10L7.5 13.75Z"
-                                                        fill="white" />
-                                                </g>
-                                            </svg>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            Продукция
                                         </a>
                                     </li>
-                                    <li class="networks__item">
-                                        <a class="networks__link" href="#">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.6">
-                                                    <g clip-path="url(#clip0_5903_256078)">
-                                                        <path
-                                                            d="M7.84753 12.6486L7.51669 17.3019C7.99003 17.3019 8.19503 17.0986 8.44086 16.8544L10.66 14.7336L15.2584 18.1011C16.1017 18.5711 16.6959 18.3236 16.9234 17.3252L19.9417 3.1819L19.9425 3.18107C20.21 1.9344 19.4917 1.4469 18.67 1.75273L0.928359 8.54523C-0.282474 9.01523 -0.264141 9.69023 0.722526 9.99607L5.25836 11.4069L15.7942 4.8144C16.29 4.48607 16.7409 4.66773 16.37 4.99607L7.84753 12.6486Z"
-                                                            fill="white" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_5903_256078">
-                                                        <rect width="20" height="20" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            Сертификаты
                                         </a>
                                     </li>
-                                    <li class="networks__item">
-                                        <a class="networks__link" href="#">
-                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.6">
-                                                    <g clip-path="url(#clip0_5903_256081)">
-                                                        <path
-                                                            d="M10.6799 11.3119C10.4512 11.5409 10.0802 11.5409 9.85135 11.3119L7.18869 8.64724C7.07883 8.53729 7.01703 8.3881 7.01703 8.23265C7.01703 8.07705 7.07883 7.92801 7.18869 7.81792L7.66202 7.34439L6.27179 5.95312L5.13288 7.09289C4.74958 7.47648 4.74973 8.10057 5.13288 8.48415L10.0143 13.3695C10.1988 13.5541 10.4457 13.6557 10.7095 13.6557C10.9733 13.6557 11.2202 13.554 11.4047 13.3694L12.5436 12.2298L11.1534 10.8384L10.6799 11.3119Z"
-                                                            fill="white" />
-                                                        <path
-                                                            d="M19.1595 7.06428C19.1595 5.18437 18.4235 3.41242 17.0865 2.0746C15.7497 0.736785 13.979 0 12.1007 0H7.91809C7.91809 0 7.91809 0 7.91794 0C6.03973 0 4.2691 0.736785 2.93243 2.07445C1.59561 3.41227 0.859375 5.18437 0.859375 7.06412V10.3542C0.859375 11.8099 1.3031 13.2104 2.14264 14.404C2.8833 15.4571 3.87939 16.2795 5.04074 16.8011V18.691C5.04074 19.6681 5.58746 20.0147 6.0556 20.0149C6.39008 20.0149 6.7247 19.8497 7.05032 19.524L9.15405 17.4184H12.1008C13.9792 17.4184 15.7498 16.6816 17.0866 15.3438C18.4235 14.0059 19.1597 12.234 19.1597 10.3542L19.1595 7.06428ZM13.7866 12.6405L12.2333 14.1948C11.8274 14.601 11.2863 14.8244 10.7095 14.8244C10.1328 14.8244 9.59167 14.6009 9.18579 14.1948L4.3042 9.30945C3.4642 8.46852 3.4642 7.10047 4.3042 6.25969L5.85754 4.70534C5.96741 4.59525 6.11633 4.53356 6.27182 4.53356C6.42715 4.53356 6.57623 4.59525 6.6861 4.70534L8.90503 6.92593C9.01489 7.03587 9.07654 7.18506 9.07654 7.34051C9.07654 7.49596 9.01489 7.64515 8.90488 7.7551L8.4317 8.22863L10.2658 10.0641L10.7391 9.59042C10.968 9.36152 11.339 9.36152 11.5677 9.59057L13.7866 11.8112C13.8966 11.9211 13.9583 12.0703 13.9583 12.2257C13.9583 12.3813 13.8966 12.5305 13.7866 12.6405ZM9.56573 5.69256C9.56573 5.36883 9.82803 5.10619 10.1517 5.10619C12.1819 5.10619 13.8336 6.75903 13.8336 8.79057C13.8336 9.11445 13.5713 9.37694 13.2477 9.37694C12.9242 9.37694 12.6617 9.11445 12.6617 8.79057C12.6617 7.40572 11.5358 6.27893 10.1517 6.27893C9.82803 6.27893 9.56573 6.01644 9.56573 5.69256ZM15.7579 9.37725C15.4343 9.37725 15.172 9.1146 15.172 8.79087C15.1721 7.44878 14.6498 6.18716 13.7016 5.23812C12.7533 4.28923 11.4926 3.76654 10.1515 3.76654C9.82803 3.76654 9.56558 3.50404 9.56558 3.18016C9.56558 2.85643 9.82803 2.59379 10.1515 2.59379C11.8056 2.59379 13.3606 3.23849 14.5302 4.40895C15.6999 5.57941 16.344 7.13559 16.3438 8.79087C16.3438 9.1146 16.0815 9.37725 15.7579 9.37725Z"
-                                                            fill="white" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_5903_256081">
-                                                        <rect width="20" height="20.0149" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="#">
+                                            Контакты
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
-                        <nav class="footer__nav nav">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        О компании
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        Кейсы
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        Услуги
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        Контакты
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        Как мы работаем
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">
-                                        Статьи
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="footer__connections connections connections--additional">
-                            <ul class="connections__list">
-                                <li class="connections__item">
-                                    <div class="connections__icon">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_259050)">
+                        <div class="footer__column">
+                            <div class="footer__suptitle">
+                                Контакты
+                            </div>
+                            <div class="footer__connections connections connections--additional">
+                                <ul class="connections__list">
+                                    <li class="connections__item">
+                                        <div class="connections__icon">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <path
-                                                    d="M3.57401 11.0021C3.57401 8.29171 3.56921 5.58129 3.57401 2.87086C3.57881 1.4365 4.50947 0.309153 5.91505 0.0405098C6.10214 0.0069293 6.29883 0.00213209 6.48592 0.00213209C9.49377 0.00213209 12.4968 -0.00266512 15.5047 0.00213209C17.2077 0.00213209 18.4214 1.21583 18.4214 2.91883C18.4214 8.3061 18.4214 13.6934 18.4214 19.0806C18.4214 20.7836 17.2077 21.9973 15.5047 21.9973C12.4968 22.0021 9.49377 22.0021 6.48592 21.9973C4.7877 21.9973 3.57401 20.7788 3.56921 19.0806C3.57401 16.3894 3.57401 13.6934 3.57401 11.0021ZM5.11391 10.9829C5.11391 13.679 5.11391 16.3702 5.11391 19.0662C5.11391 19.9489 5.63681 20.467 6.5147 20.467C9.50336 20.467 12.492 20.467 15.4855 20.467C15.6294 20.467 15.7781 20.4622 15.9124 20.4286C16.5361 20.2751 16.8863 19.7714 16.8863 19.0423C16.8863 14.8447 16.8863 10.6471 16.8863 6.45438C16.8863 5.26467 16.8911 4.07017 16.8863 2.88046C16.8815 2.21844 16.4977 1.69075 15.8932 1.58521C15.5191 1.52285 15.1305 1.56123 14.7467 1.55643C14.6316 1.7723 14.5116 1.98818 14.3965 2.20405C14.3773 2.23763 14.3581 2.27601 14.3389 2.30959C14.1471 2.62621 13.8688 2.8133 13.4946 2.8133C11.8396 2.81809 10.1846 2.81809 8.52953 2.8133C8.13616 2.8133 7.84832 2.61661 7.66123 2.27121C7.56049 2.07932 7.46934 1.88264 7.3686 1.69555C7.33982 1.63798 7.27746 1.55643 7.22948 1.55643C6.82172 1.56123 6.40436 1.53244 6.01579 1.61879C5.44013 1.74832 5.11391 2.26641 5.11391 2.93323C5.11391 5.61007 5.11391 8.29651 5.11391 10.9829Z"
-                                                    fill="#4E331E" />
-                                                <path
-                                                    d="M11.0001 18.9239C10.6643 18.9239 10.3285 18.9287 9.99273 18.9239C9.54659 18.9143 9.22038 18.6025 9.21079 18.1851C9.20119 17.7534 9.51301 17.408 9.96875 17.3936C10.6547 17.3792 11.3407 17.3792 12.0267 17.3936C12.4777 17.4032 12.7943 17.7534 12.7847 18.1851C12.7751 18.6025 12.4489 18.9143 12.0028 18.9239C11.6718 18.9335 11.336 18.9239 11.0001 18.9239Z"
-                                                    fill="#4E331E" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_259050">
-                                                    <rect width="14.8522" height="22" fill="white"
-                                                        transform="translate(3.57397)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="connections__box">
-                                        <div class="connections__suptext">
-                                            Отдел продаж
+                                                    d="M1 18.7372V4.19176H3.5071L9.34517 14.1989H9.46591V4.19176H12.0014V18.7372H9.52983L3.67045 8.76562H3.54972V18.7372H1ZM13.9474 14.4901V12.8494H20.2259V14.4901H13.9474ZM17.0795 11.6705C16.3646 11.6705 15.7443 11.5166 15.2188 11.2088C14.6979 10.901 14.2955 10.482 14.0114 9.9517C13.7273 9.4214 13.5852 8.82008 13.5852 8.14773V7.52273C13.5852 6.85511 13.7273 6.25616 14.0114 5.72585C14.2955 5.19081 14.6979 4.76941 15.2188 4.46165C15.7396 4.15388 16.3551 4 17.0653 4C17.785 4 18.4029 4.15388 18.919 4.46165C19.4399 4.76941 19.84 5.19081 20.1193 5.72585C20.4034 6.25616 20.5455 6.85511 20.5455 7.52273V8.14773C20.5455 8.81534 20.4058 9.4143 20.1264 9.9446C19.8518 10.4749 19.4541 10.8963 18.9332 11.2088C18.4171 11.5166 17.7992 11.6705 17.0795 11.6705ZM17.0795 9.90909C17.5294 9.90909 17.8774 9.75047 18.1236 9.43324C18.3745 9.11127 18.5 8.68277 18.5 8.14773V7.52273C18.5 6.99242 18.3769 6.57102 18.1307 6.25852C17.8845 5.94602 17.5294 5.78977 17.0653 5.78977C16.6061 5.78977 16.2533 5.94602 16.0071 6.25852C15.7656 6.57102 15.6449 6.99242 15.6449 7.52273V8.14773C15.6449 8.68277 15.768 9.11127 16.0142 9.43324C16.2604 9.75047 16.6155 9.90909 17.0795 9.90909Z"
+                                                    fill="#fff" />
+                                            </svg>
                                         </div>
-                                        <a class="connections__link" href="+77710000000">
-                                            +7 771 000 00 00
-
-                                        </a>
-                                        <a class="connections__link" href="+77710000000">
-                                            +7 771 000 00 00
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="connections__item">
-                                    <div class="connections__icon">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_259140)">
-                                                <path
-                                                    d="M10.9721 22.0006C10.1822 21.2923 9.38376 20.6098 8.62395 19.8886C6.98415 18.3346 5.49459 16.6476 4.24542 14.7588C3.38688 13.4582 2.68288 12.0802 2.36522 10.5348C2.05615 9.04099 2.15488 7.56431 2.62707 6.11338C3.15078 4.49933 4.06083 3.14713 5.36151 2.06109C6.6579 0.979329 8.14747 0.309671 9.8259 0.0821587C11.3841 -0.128183 12.8909 0.064988 14.3418 0.665964C15.7627 1.25406 16.9561 2.15552 17.909 3.36606C18.832 4.53796 19.4286 5.86011 19.6776 7.33679C19.9523 8.95943 19.7892 10.5391 19.1797 12.0716C18.5057 13.7629 17.5012 15.2525 16.3637 16.6605C14.8097 18.5879 13.0583 20.3222 11.1309 21.8761C11.1008 21.9019 11.0579 21.9319 10.9721 22.0006ZM10.9978 19.7384C11.045 19.704 11.0794 19.6783 11.1094 19.6525C12.2169 18.6566 13.2858 17.6221 14.2645 16.4974C15.5609 15.0078 16.7328 13.441 17.5184 11.608C18.2095 9.99396 18.3082 8.33699 17.7545 6.6886C16.8487 4.00138 14.9642 2.36157 12.1654 1.82928C10.766 1.56313 9.40093 1.7606 8.10454 2.3487C6.45186 3.09991 5.2499 4.31045 4.52015 5.96743C3.902 7.37543 3.73888 8.84353 4.08229 10.3503C4.38707 11.6896 5.04386 12.8658 5.79507 13.9947C7.06142 15.8835 8.60678 17.5276 10.2595 19.0773C10.5041 19.3005 10.7488 19.5151 10.9978 19.7384Z"
-                                                    fill="#4E331E" />
-                                                <path
-                                                    d="M10.9935 12.8827C8.74418 12.8784 6.91979 11.0455 6.92408 8.79609C6.92837 6.55102 8.77423 4.71375 11.015 4.72663C13.2601 4.73522 15.0931 6.57678 15.0845 8.81756C15.0759 11.0669 13.2429 12.8913 10.9935 12.8827ZM10.9978 11.1657C12.2985 11.1657 13.3588 10.1097 13.3631 8.81326C13.3631 7.51258 12.3028 6.448 11.0064 6.448C9.71003 6.4437 8.64545 7.50829 8.64115 8.80468C8.64115 10.1011 9.69715 11.1614 10.9978 11.1657Z"
-                                                    fill="#4E331E" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_259140">
-                                                    <rect width="17.6215" height="22" fill="white"
-                                                        transform="translate(2.18921)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="connections__box">
-                                        <div class="connections__suptext">
-                                            Адрес
+                                        <div class="connections__box">
+                                            <div class="connections__suptext">
+                                                БИН:
+                                            </div>
+                                            <div class="connections__text">
+                                                210640023251
+                                            </div>
                                         </div>
-                                        <a class="connections__link" href="#">
-                                            г.Атырау, ул. Севастопольская 1В
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="connections__item">
-                                    <div class="connections__icon">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_259095)">
-                                                <g clip-path="url(#clip1_5903_259095)">
-                                                    <path
-                                                        d="M10.9975 2.375C13.1941 2.375 15.3858 2.375 17.5823 2.375C20.1327 2.375 22.0049 4.24724 22.0049 6.79762C22.0049 9.58387 22.0049 12.3652 22.0049 15.1515C22.0049 17.7018 20.1327 19.5741 17.5823 19.5741C13.1941 19.5741 8.80096 19.5741 4.41273 19.5741C1.86236 19.5741 -0.0098877 17.7018 -0.0098877 15.1515C-0.0098877 12.3456 -0.0098877 9.53473 -0.0098877 6.72391C-0.00497367 4.59122 1.41518 2.86149 3.50855 2.45362C3.79357 2.39957 4.09332 2.37991 4.38816 2.375C6.59456 2.375 8.79604 2.375 10.9975 2.375ZM10.9975 4.09491C8.80096 4.09491 6.6093 4.09491 4.41273 4.09491C2.81568 4.09491 1.71002 5.20056 1.71002 6.79762C1.71002 9.57896 1.71002 12.3652 1.71002 15.1465C1.71002 16.7387 2.82059 17.8493 4.41273 17.8493C8.80096 17.8493 13.1892 17.8493 17.5774 17.8493C19.1745 17.8493 20.2801 16.7387 20.2801 15.1465C20.2801 12.3652 20.2801 9.57896 20.2801 6.79762C20.2801 5.20548 19.1695 4.09491 17.5774 4.09491C15.3858 4.09491 13.1941 4.09491 10.9975 4.09491Z"
-                                                        fill="#4E331E" />
-                                                    <path
-                                                        d="M13.6019 12.2209C13.3317 12.4715 13.0958 12.6828 12.8697 12.9089C11.8132 13.9654 10.1818 13.9654 9.13017 12.904C8.90412 12.6779 8.66825 12.4666 8.4422 12.2504C8.2309 12.4568 7.99503 12.673 7.7739 12.8991C6.84023 13.8671 5.91148 14.8352 4.98273 15.8033C4.59452 16.2111 4.06381 16.2504 3.69526 15.8966C3.32671 15.5477 3.35128 15.0121 3.73948 14.6091C4.8648 13.4396 5.98519 12.2701 7.1105 11.1005C7.14982 11.0612 7.18421 11.017 7.23827 10.958C6.8992 10.6091 6.56505 10.2602 6.23089 9.91625C5.40042 9.0563 4.56504 8.20126 3.73457 7.3413C3.35128 6.94818 3.33162 6.42238 3.68543 6.06857C4.04415 5.70984 4.5847 5.73933 4.9729 6.13736C6.73212 7.95555 8.49626 9.76883 10.2555 11.587C10.7764 12.1226 11.2285 12.1226 11.7493 11.5821C13.5135 9.76392 15.2727 7.95064 17.0319 6.13245C17.4103 5.73933 17.9361 5.70493 18.2997 6.04891C18.6683 6.39781 18.6535 6.93344 18.2604 7.33639C17.1449 8.48627 16.0245 9.64106 14.9091 10.7909C14.8648 10.8352 14.8206 10.8843 14.7616 10.9531C15.1204 11.3266 15.4742 11.7 15.828 12.0686C16.6437 12.9187 17.4644 13.7688 18.2801 14.619C18.6535 15.0121 18.6634 15.5477 18.2997 15.8917C17.9312 16.2357 17.4054 16.2013 17.0319 15.8082C15.9263 14.6583 14.8206 13.5035 13.715 12.3536C13.6658 12.3143 13.6314 12.2602 13.6019 12.2209Z"
-                                                        fill="#4E331E" />
+                                    </li>
+                                    <li class="connections__item">
+                                        <div class="connections__icon">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_5988_213466)">
+                                                    <g clip-path="url(#clip1_5988_213466)">
+                                                        <path
+                                                            d="M10.9976 2.37598C13.1942 2.37598 15.3859 2.37598 17.5824 2.37598C20.1328 2.37598 22.0051 4.24822 22.0051 6.7986C22.0051 9.58485 22.0051 12.3662 22.0051 15.1524C22.0051 17.7028 20.1328 19.5751 17.5824 19.5751C13.1942 19.5751 8.80108 19.5751 4.41286 19.5751C1.86248 19.5751 -0.00976562 17.7028 -0.00976562 15.1524C-0.00976562 12.3465 -0.00976562 9.53571 -0.00976562 6.72489C-0.0048516 4.5922 1.4153 2.86246 3.50868 2.4546C3.79369 2.40055 4.09344 2.38089 4.38829 2.37598C6.59468 2.37598 8.79617 2.37598 10.9976 2.37598ZM10.9976 4.09589C8.80108 4.09589 6.60943 4.09589 4.41286 4.09589C2.8158 4.09589 1.71014 5.20154 1.71014 6.7986C1.71014 9.57994 1.71014 12.3662 1.71014 15.1475C1.71014 16.7397 2.82071 17.8502 4.41286 17.8502C8.80108 17.8502 13.1893 17.8502 17.5775 17.8502C19.1746 17.8502 20.2802 16.7397 20.2802 15.1475C20.2802 12.3662 20.2802 9.57994 20.2802 6.7986C20.2802 5.20645 19.1697 4.09589 17.5775 4.09589C15.3859 4.09589 13.1942 4.09589 10.9976 4.09589Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M13.6021 12.219C13.3318 12.4696 13.0959 12.6809 12.8699 12.9069C11.8133 13.9635 10.1819 13.9635 9.13029 12.902C8.90425 12.676 8.66837 12.4647 8.44233 12.2485C8.23102 12.4548 7.99515 12.6711 7.77402 12.8971C6.84035 13.8652 5.9116 14.8332 4.98285 15.8013C4.59465 16.2092 4.06393 16.2485 3.69538 15.8947C3.32683 15.5458 3.3514 15.0101 3.73961 14.6072C4.86492 13.4377 5.98531 12.2681 7.11063 11.0986C7.14994 11.0593 7.18434 11.015 7.23839 10.9561C6.89932 10.6072 6.56517 10.2583 6.23102 9.9143C5.40055 9.05434 4.56516 8.1993 3.73469 7.33935C3.3514 6.94623 3.33174 6.42043 3.68555 6.06662C4.04427 5.70789 4.58482 5.73738 4.97303 6.13541C6.73225 7.9536 8.49638 9.76688 10.2556 11.5851C10.7765 12.1207 11.2286 12.1207 11.7495 11.5802C13.5136 9.76196 15.2728 7.94869 17.032 6.1305C17.4104 5.73738 17.9362 5.70298 18.2999 6.04696C18.6684 6.39586 18.6537 6.93148 18.2605 7.33443C17.1451 8.48432 16.0247 9.63911 14.9092 10.789C14.865 10.8332 14.8207 10.8824 14.7618 10.9512C15.1205 11.3246 15.4743 11.6981 15.8281 12.0666C16.6438 12.9168 17.4645 13.7669 18.2802 14.617C18.6537 15.0101 18.6635 15.5458 18.2999 15.8898C17.9313 16.2337 17.4055 16.1993 17.032 15.8062C15.9264 14.6563 14.8207 13.5015 13.7151 12.3517C13.6659 12.3123 13.6315 12.2583 13.6021 12.219Z"
+                                                            fill="white" />
+                                                    </g>
                                                 </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_259095">
-                                                    <rect width="22" height="22" fill="white" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_259095">
-                                                    <rect width="22.0197" height="17.204" fill="white"
-                                                        transform="translate(-0.0098877 2.375)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="connections__box">
-                                        <div class="connections__suptext">
-                                            Email
+                                                <defs>
+                                                    <clipPath id="clip0_5988_213466">
+                                                        <rect width="22" height="22" fill="white" />
+                                                    </clipPath>
+                                                    <clipPath id="clip1_5988_213466">
+                                                        <rect width="22.0197" height="17.204" fill="white"
+                                                            transform="translate(-0.00976562 2.37598)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
                                         </div>
-                                        <a class="connections__link" href="mailto:client@example.kz">
-                                            client@example.kz
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="connections__item">
-                                    <div class="connections__icon">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_5903_259185)">
-                                                <g clip-path="url(#clip1_5903_259185)">
+                                        <div class="connections__box">
+                                            <div class="connections__suptext">
+                                                Email:
+                                            </div>
+                                            <a class="connections__link" href="#">
+                                                zhangeldy.klushev@tecsonindustry.com
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="connections__item">
+                                        <div class="connections__icon">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_5988_213376)">
                                                     <path
-                                                        d="M10.9975 2.375C13.1941 2.375 15.3858 2.375 17.5823 2.375C20.1327 2.375 22.0049 4.24724 22.0049 6.79762C22.0049 9.58387 22.0049 12.3652 22.0049 15.1515C22.0049 17.7018 20.1327 19.5741 17.5823 19.5741C13.1941 19.5741 8.80096 19.5741 4.41273 19.5741C1.86236 19.5741 -0.0098877 17.7018 -0.0098877 15.1515C-0.0098877 12.3456 -0.0098877 9.53473 -0.0098877 6.72391C-0.00497367 4.59122 1.41518 2.86149 3.50855 2.45362C3.79357 2.39957 4.09332 2.37991 4.38816 2.375C6.59456 2.375 8.79604 2.375 10.9975 2.375ZM10.9975 4.09491C8.80096 4.09491 6.6093 4.09491 4.41273 4.09491C2.81568 4.09491 1.71002 5.20056 1.71002 6.79762C1.71002 9.57896 1.71002 12.3652 1.71002 15.1465C1.71002 16.7387 2.82059 17.8493 4.41273 17.8493C8.80096 17.8493 13.1892 17.8493 17.5774 17.8493C19.1745 17.8493 20.2801 16.7387 20.2801 15.1465C20.2801 12.3652 20.2801 9.57896 20.2801 6.79762C20.2801 5.20548 19.1695 4.09491 17.5774 4.09491C15.3858 4.09491 13.1941 4.09491 10.9975 4.09491Z"
-                                                        fill="#4E331E" />
+                                                        d="M3.57389 11.0002C3.57389 8.28976 3.56909 5.57933 3.57389 2.86891C3.57869 1.43454 4.50934 0.3072 5.91493 0.0385566C6.10202 0.00497618 6.2987 0.000178968 6.48579 0.000178968C9.49364 0.000178968 12.4967 -0.00461824 15.5045 0.000178968C17.2076 0.000178968 18.4213 1.21387 18.4213 2.91688C18.4213 8.30415 18.4213 13.6914 18.4213 19.0787C18.4213 20.7817 17.2076 21.9954 15.5045 21.9954C12.4967 22.0002 9.49364 22.0002 6.48579 21.9954C4.78758 21.9954 3.57389 20.7769 3.56909 19.0787C3.57389 16.3874 3.57389 13.6914 3.57389 11.0002ZM5.11379 10.981C5.11379 13.677 5.11379 16.3683 5.11379 19.0643C5.11379 19.947 5.63669 20.4651 6.51458 20.4651C9.50324 20.4651 12.4919 20.4651 15.4854 20.4651C15.6293 20.4651 15.778 20.4603 15.9123 20.4267C16.5359 20.2732 16.8861 19.7695 16.8861 19.0403C16.8861 14.8427 16.8861 10.6452 16.8861 6.45242C16.8861 5.26272 16.8909 4.06821 16.8861 2.8785C16.8813 2.21649 16.4976 1.6888 15.8931 1.58326C15.5189 1.52089 15.1304 1.55927 14.7466 1.55447C14.6315 1.77035 14.5115 1.98622 14.3964 2.2021C14.3772 2.23568 14.358 2.27406 14.3388 2.30764C14.1469 2.62425 13.8687 2.81134 13.4945 2.81134C11.8395 2.81614 10.1844 2.81614 8.52941 2.81134C8.13603 2.81134 7.8482 2.61466 7.66111 2.26926C7.56037 2.07737 7.46922 1.88068 7.36848 1.69359C7.3397 1.63603 7.27733 1.55447 7.22936 1.55447C6.8216 1.55927 6.40424 1.53049 6.01567 1.61684C5.44 1.74636 5.11379 2.26446 5.11379 2.93127C5.11379 5.60812 5.11379 8.29455 5.11379 10.981Z"
+                                                        fill="white" />
                                                     <path
-                                                        d="M13.6019 12.2209C13.3317 12.4715 13.0958 12.6828 12.8697 12.9089C11.8132 13.9654 10.1818 13.9654 9.13017 12.904C8.90412 12.6779 8.66825 12.4666 8.4422 12.2504C8.2309 12.4568 7.99503 12.673 7.7739 12.8991C6.84023 13.8671 5.91148 14.8352 4.98273 15.8033C4.59452 16.2111 4.06381 16.2504 3.69526 15.8966C3.32671 15.5477 3.35128 15.0121 3.73948 14.6091C4.8648 13.4396 5.98519 12.2701 7.1105 11.1005C7.14982 11.0612 7.18421 11.017 7.23827 10.958C6.8992 10.6091 6.56505 10.2602 6.23089 9.91625C5.40042 9.0563 4.56504 8.20126 3.73457 7.3413C3.35128 6.94818 3.33162 6.42238 3.68543 6.06857C4.04415 5.70984 4.5847 5.73933 4.9729 6.13736C6.73212 7.95555 8.49626 9.76883 10.2555 11.587C10.7764 12.1226 11.2285 12.1226 11.7493 11.5821C13.5135 9.76392 15.2727 7.95064 17.0319 6.13245C17.4103 5.73933 17.9361 5.70493 18.2997 6.04891C18.6683 6.39781 18.6535 6.93344 18.2604 7.33639C17.1449 8.48627 16.0245 9.64106 14.9091 10.7909C14.8648 10.8352 14.8206 10.8843 14.7616 10.9531C15.1204 11.3266 15.4742 11.7 15.828 12.0686C16.6437 12.9187 17.4644 13.7688 18.2801 14.619C18.6535 15.0121 18.6634 15.5477 18.2997 15.8917C17.9312 16.2357 17.4054 16.2013 17.0319 15.8082C15.9263 14.6583 14.8206 13.5035 13.715 12.3536C13.6658 12.3143 13.6314 12.2602 13.6019 12.2209Z"
-                                                        fill="#4E331E" />
+                                                        d="M11 18.9254C10.6642 18.9254 10.3284 18.9302 9.99261 18.9254C9.54647 18.9158 9.22026 18.604 9.21066 18.1866C9.20107 17.7549 9.51289 17.4095 9.96862 17.3951C10.6546 17.3807 11.3406 17.3807 12.0266 17.3951C12.4776 17.4047 12.7942 17.7549 12.7846 18.1866C12.775 18.604 12.4488 18.9158 12.0026 18.9254C11.6716 18.935 11.3358 18.9254 11 18.9254Z"
+                                                        fill="white" />
                                                 </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5903_259185">
-                                                    <rect width="22" height="22" fill="white" />
-                                                </clipPath>
-                                                <clipPath id="clip1_5903_259185">
-                                                    <rect width="22.0197" height="17.204" fill="white"
-                                                        transform="translate(-0.0098877 2.375)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div class="connections__box">
-                                        <div class="connections__suptext">
-                                            Email
+                                                <defs>
+                                                    <clipPath id="clip0_5988_213376">
+                                                        <rect width="14.8522" height="22" fill="white"
+                                                            transform="translate(3.57397)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
                                         </div>
-                                        <a class="connections__link" href="mailto:client@example.kz">
-                                            client@example.kz
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <div class="connections__box">
+                                            <div class="connections__suptext">
+                                                Телефон:
+                                            </div>
+                                            <a class="connections__link" href="tel:87013722695">
+                                                8 701 372 2695
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="footer__bottom">
                         <p class="footer__copy">
                             © 2026, TOO KTZ LOGISTICS
                         </p>
+                        <a class="footer__policy" href="#">
+                            Политика конфиденциальности
+                        </a>
                         <div class="footer__develoer">
                             <p class="footer__developer-text">
                                 Разработка:

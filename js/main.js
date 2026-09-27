@@ -1,3 +1,17 @@
+// Aos - the right initialisation
+jQuery(document).ready(function () {
+  (function () {
+    // your page initialization code here
+    // the DOM will be available here
+    AOS.init({
+      duration: 750,
+      offset: 0, // offset (in px) from the original trigger point
+      anchorPlacement: "top-bottom", // define where the AOS animations will be triggered
+    });
+  })();
+});
+// //
+
 document.querySelectorAll(".langs").forEach((langs) => {
   const langsList = langs.querySelector(".langs__list");
   if (!langsList) return;
@@ -50,221 +64,264 @@ document.querySelectorAll(".langs").forEach((langs) => {
   });
 });
 
-jQuery(document).ready(function () {
-  (function () {
-    // your page initialization code here
-    // the DOM will be available here
-    AOS.init({
-      duration: 750,
-      offset: 0, // offset (in px) from the original trigger point
-      anchorPlacement: "top-bottom", // define where the AOS animations will be triggered
-    });
-  })();
-});
-
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-  header.classList.toggle("scroll", window.scrollY > 0);
-});
-
 $(function () {
   $(".header__burger").on("click", function (event) {
     $("body").toggleClass("body--active");
   });
 });
 
-$(document).ready(function () {
-  var $popup = $(".popup");
-  var $popups = {
-    contact: $(".popup--contact"),
-  };
+// Получаем все элементы с классом tub
+if (document.querySelector("#tubs")) {
+  const tabs = document.querySelectorAll("#tubs .tub");
+  const tubElement = document.querySelectorAll("#tub-items .tub-element");
 
-  // Функция для показа попапа
-  function showPopup($popupToShow) {
-    $popupToShow.addClass("popup--active").fadeIn(250, function () {
-      $(this).animate({ opacity: 1 }, 250);
-    });
-    $("body").addClass("body--popup");
-  }
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", function () {
+      tabs.forEach((t) => t.classList.remove("tub--active"));
 
-  // Функция для скрытия попапа
-  function hidePopup($popupToHide) {
-    $popupToHide.removeClass("popup--active").fadeOut(250, function () {
-      $(this).animate({ opacity: 1 }, 250);
-    });
-    $("body").removeClass("body--popup");
-  }
+      this.classList.add("tub--active");
 
-  $(".heading__link").click(function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    showPopup($popups.contact);
-  });
+      tubElement.forEach((tub) => tub.classList.remove("tub-element--active"));
 
-  // Обработчик кликов для скрытия попапов
-  $(".cls").click(function (event) {
-    event.stopPropagation();
-    event.preventDefault();
-    hidePopup($popup);
-  });
-
-  // Скрываем попап при клике вне его области
-  $(document).click(function (event) {
-    $.each($popups, function (key, $popupToCheck) {
-      if ($popupToCheck.hasClass("popup--active")) {
-        var $popupInner = $popupToCheck.find(".popup__inner");
-        if (
-          !$popupInner.is(event.target) &&
-          $popupInner.has(event.target).length === 0
-        ) {
-          hidePopup($popupToCheck);
-        }
+      if (tubElement[index]) {
+        tubElement[index].classList.add("tub-element--active");
       }
     });
   });
+}
+//
+
+$(function () {
+  const $popup = $(".popup--application");
+
+  if (!$popup.length) {
+    return;
+  }
+
+  const showPopup = () => {
+    $popup
+      .addClass("popup--active")
+      .attr("aria-hidden", "false")
+      .stop(true, true)
+      .fadeIn(250);
+    $("body").addClass("body--popup");
+  };
+
+  const hidePopup = () => {
+    $popup
+      .removeClass("popup--active")
+      .attr("aria-hidden", "true")
+      .stop(true, true)
+      .fadeOut(250);
+    $("body").removeClass("body--popup");
+  };
+
+  $(".header__link, .heading__link.btn--orange, .contacts__link").on(
+    "click",
+    function (event) {
+      event.preventDefault();
+      showPopup();
+    },
+  );
+
+  $popup.on("click", ".popup__close", hidePopup);
+
+  $popup.on("click", function (event) {
+    if (!$(event.target).closest(".popup__inner").length) {
+      hidePopup();
+    }
+  });
+
+  $(document).on("keydown", function (event) {
+    if (event.key === "Escape" && $popup.hasClass("popup--active")) {
+      hidePopup();
+    }
+  });
 });
 
-new Swiper(".services__slider", {
-  slidesPerView: 3,
+//
+
+if (document.querySelector(".aside")) {
+  const aside = document.querySelector(".aside");
+  const offerInner = document.querySelector(".offer__inner");
+  let animationFrame;
+
+  const updateAsidePosition = () => {
+    if (window.innerWidth <= 1200 || !offerInner) {
+      aside.style.transform = "";
+      return;
+    }
+
+    const scrollTop = window.pageYOffset;
+    const asideTop = parseFloat(window.getComputedStyle(aside).top) || 0;
+    const offerInnerRect = offerInner.getBoundingClientRect();
+    const offerInnerTop = scrollTop + offerInnerRect.top;
+    const offerInnerBottom = scrollTop + offerInnerRect.bottom;
+    const maxTranslate = offerInnerBottom - offerInnerTop - aside.offsetHeight;
+    const translate = Math.max(
+      0,
+      Math.min(scrollTop + asideTop - offerInnerTop, maxTranslate),
+    );
+
+    aside.style.transform = `translateY(${translate}px)`;
+  };
+
+  const requestAsidePositionUpdate = () => {
+    if (animationFrame) {
+      return;
+    }
+
+    animationFrame = window.requestAnimationFrame(() => {
+      updateAsidePosition();
+      animationFrame = null;
+    });
+  };
+
+  window.addEventListener("scroll", requestAsidePositionUpdate, { passive: true });
+  window.addEventListener("resize", requestAsidePositionUpdate);
+  updateAsidePosition();
+}
+
+//
+
+$(function () {
+  $(".burger").on("click", function (event) {
+    $("body").toggleClass("body--active");
+  });
+
+  $(".menu__link").on("click", function (event) {
+    $("body").toggleClass("body--active");
+  });
+});
+
+new Swiper(".products__swiper", {
+  slidesPerView: 6,
   loop: true,
   speed: 750,
   spaceBetween: 30,
-  navigation: {
-    prevEl: ".arrow--services-prev",
-    nextEl: ".arrow--services-next",
-  },
-  pagination: {
-    el: ".pagination--services",
-    type: "bullets",
-    clickable: true,
-  },
-  breakpoints: {
-    301: {
-      slidesPerView: 1,
-      loop: true,
-      speed: 750,
-      spaceBetween: 15,
-    },
-    577: {
-      slidesPerView: 1,
-      loop: true,
-      speed: 750,
-      spaceBetween: 30,
-    },
-    769: {
-      slidesPerView: 2,
-      loop: true,
-      speed: 750,
-      spaceBetween: 30,
-    },
-    1201: {
-      slidesPerView: 3,
-      loop: true,
-      speed: 750,
-      spaceBetween: 30,
-    },
-  },
-});
-
-new Swiper(".partners__slider", {
-  slidesPerView: 7,
-  loop: true,
-  speed: 750,
-  spaceBetween: 10,
-  navigation: {
-    prevEl: ".arrow--partners-prev",
-    nextEl: ".arrow--partners-next",
-  },
-  pagination: {
-    el: ".pagination--partners",
-    type: "bullets",
-    clickable: true,
-  },
-
-  //     delay: 5000, // задержка между слайдами в миллисекундах
-  //     disableOnInteraction: false, // если true, автопрокрутка остановится при взаимодействии пользователя с swiper
-  // },
-  breakpoints: {
-    301: {
-      slidesPerView: 1,
-      loop: true,
-      speed: 750,
-      spaceBetween: 10,
-    },
-    576: {
-      slidesPerView: 2,
-      loop: true,
-      speed: 750,
-      spaceBetween: 10,
-    },
-    769: {
-      slidesPerView: 4,
-      loop: true,
-      speed: 750,
-      spaceBetween: 10,
-    },
-    1201: {
-      slidesPerView: 7,
-      loop: true,
-      speed: 750,
-      spaceBetween: 10,
-    },
-  },
-});
-
-new Swiper(".certificates__slider", {
-  slidesPerView: 5,
-  loop: true,
-  speed: 750,
-  spaceBetween: 25,
-
   breakpoints: {
     301: {
       slidesPerView: 1.5,
       loop: true,
       speed: 750,
       spaceBetween: 15,
-    },
-    576: {
-      slidesPerView: 2,
-      loop: true,
-      speed: 750,
-      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 1,
     },
     769: {
       slidesPerView: 2.5,
       loop: true,
       speed: 750,
-      spaceBetween: 25,
+      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 1,
     },
     993: {
       slidesPerView: 3.5,
       loop: true,
       speed: 750,
-      spaceBetween: 25,
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    1201: {
+      slidesPerView: 6,
+      loop: true,
+      speed: 750,
+      spaceBetween: 30,
+      centeredSlides: false,
+      initialSlide: 0,
+    },
+  },
+});
+
+new Swiper(".clients__swiper", {
+  slidesPerView: 12,
+  loop: true,
+  speed: 750,
+  spaceBetween: 30,
+  breakpoints: {
+    301: {
+      slidesPerView: 3,
+      loop: true,
+      speed: 750,
+      spaceBetween: 15,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    769: {
+      slidesPerView: 4,
+      loop: true,
+      speed: 750,
+      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    993: {
+      slidesPerView: 6,
+      loop: true,
+      speed: 750,
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    1201: {
+      slidesPerView: 12,
+      loop: true,
+      speed: 750,
+      spaceBetween: 30,
+      centeredSlides: false,
+      initialSlide: 0,
+    },
+  },
+});
+
+new Swiper(".certificates__swiper", {
+  slidesPerView: 5,
+  loop: true,
+  speed: 750,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: ".arrow-certificates--prev",
+    nextEl: ".arrow-certificates--next",
+  },
+  pagination: {
+    el: ".pagination--certificates",
+    type: "bullets",
+    clickable: true,
+  },
+  breakpoints: {
+    301: {
+      slidesPerView: 1.5,
+      loop: true,
+      speed: 750,
+      spaceBetween: 15,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    769: {
+      slidesPerView: 2,
+      loop: true,
+      speed: 750,
+      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    993: {
+      slidesPerView: 3,
+      loop: true,
+      speed: 750,
+      spaceBetween: 20,
+      centeredSlides: true,
+      initialSlide: 1,
     },
     1201: {
       slidesPerView: 5,
       loop: true,
       speed: 750,
-      spaceBetween: 25,
+      spaceBetween: 30,
+      centeredSlides: false,
+      initialSlide: 0,
     },
-  },
-});
-
-new Swiper(".gallery__slider", {
-  slidesPerView: 1,
-  loop: true,
-  speed: 750,
-  spaceBetween: 30,
-  navigation: {
-    prevEl: ".arrow--gallery-prev",
-    nextEl: ".arrow--gallery-next",
-  },
-  pagination: {
-    el: ".pagination--gallery",
-    type: "bullets",
-    clickable: true,
   },
 });
